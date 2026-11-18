@@ -1,0 +1,93 @@
+:root {
+    --bg-cream: #F8F4EC;
+    --bg-white: #FFFFFF;
+    --green-dark: #233329;
+    --green-hover: #18241D;
+    --gold: #A8844C;
+    --gold-light: #D4B475;
+    --terracotta: #C85A32;
+    --text-dark: #1E2420;
+    --text-muted: #666B67;
+    --border-light: #E2DDD3;
+
+    --font-serif: 'Playfair Display', Georgia, serif;
+    --font-sans: 'Plus Jakarta Sans', -apple-system, sans-serif;
+}
+
+/* Reset et base */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--font-sans);
+    background-color: var(--bg-cream);
+    color: var(--text-dark);
+    line-height: 1.6;
+    --webkit-font-smoothing: antialiased;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+    transition: color 0.3s ease;
+}
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 24px;
+}
+
+/* Buttons */
+.btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 13px 26px;
+    border-radius: 50px;
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 0.125em;
+    text-transform: uppercase;
+    cursor: pointer;
+    border: 1px solid transparent;
+    transition: transform 0.15s ease, background-color 0.25s ease, color 0.25s ease, box-shadow 0.25s ease;
+}
+/* Navbar */
+.navbar {
+    background-color: var(--bg-cream);
+    border-bottom:1px solid var(--border-light);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+}
+.logo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.logo-main {
+    font-family: var(--font-serif);
+    font-size: 24px;
+    letter-spacing: 0.14em;
+    color: var(--green-dark);
+    line-height: 1.1;
+}
+.logo-sub {
+    font-size: 10px;
+    letter-spacing: 0.25em;
+    text-transform: uppercase;
+    color: var(--gold);
+    margin-top: 4px;
+}
+.logo-sub::before {
+    content: "";
+    
+}
