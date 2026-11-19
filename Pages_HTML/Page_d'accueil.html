@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="../Page_CSS/Restaurant.css">
     <script src="Page_JS/Restaurant.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <title>Document</title>
 </head>
 <body>
@@ -24,6 +25,71 @@
                 <a href="#">NOTRE ÉQUIPE </a>
                 <a href="#">CONTACT</a>
             </nav>
+            
+            <div class="nav-actions">
+                <button class="cart-btn open-cart" aria-label="Panier">
+                    <span class="icon-symbol">&#128717;</span>
+                    <span class="cart-badge" id="cart-count"></span>
+                </button>
+                <button class="btn btn-dark open-booking">RÉSERVER UNE TABLE</button>
+            </div>
         </div>
+    </header>
+
+    <!-- Section Hero -->
+     <section class="hero">
+        <img src="../Images/v-DEV.png" alt="Cusine italienne Bella Vita" class="hero-bg">
+        <div class="hero-overlay"></div>
+        <div class="container hero-content">
+            <div class="eyebrow">
+                <span class="line"></span>
+                <span>RISTORANTE ITALIANO  YVERDON-LES-BAINS</span>
+            </div>
+            <h1>La <em>dolce vita</em><br>dans votre assiette</h1>
+            <p class="hero-desc">
+                Pâtes fraîches, pizzas au feu de bois et produits de saison : une cuisine italienne généreuse, à partager en famille ou entre amis.
+            </p>
+            <div class="hero-buttons">
+                <button class="btn btn-light" id="btn-carte">DÉCOUVRIR LA CARTE &rarr;</button>
+                <button class="btn btn-outline-light open-booking">RÉSERVER UNE TABLE</button>
+            </div>
+        </div>
+     </section>
+
+     <!-- Bandeau d'informations -->
+      <!-- Bandeau d'informations -->
+    <section class="info-bar">
+        <div class="container info-grid">
+            <div class="info-item">
+                <div class="info-icon">
+                    <i class="fa-regular fa-clock"></i>
+                </div>
+                <div>
+                    <span class="info-label">HORAIRES</span>
+                    <p class="info-text">Mar – Dim : 11h30–14h00 & 18h30–22h30</p>
+                </div>
+            </div>
+
+            <div class="info-item">
+                <div class="info-icon">
+                    <i class="fa-solid fa-location-dot"></i>
+                </div>
+                <div>
+                    <span class="info-label">ADRESSE</span>
+                    <p class="info-text">Rue du Lac 24, Yverdon-les-Bains</p>
+                </div>
+            </div>
+
+            <div class="info-item">
+                <div class="info-icon">
+                    <i class="fa-solid fa-phone"></i>
+                </div>
+                <div>
+                    <span class="info-label">RÉSERVATIONS</span>
+                    <p class="info-text">+41 24 123 45 67</p>
+                </div>
+            </div>
+        </div>
+    </section>
 </body>
 </html>
