@@ -54,7 +54,8 @@ a {
     border: 1px solid transparent;
     transition: transform 0.15s ease, background-color 0.25s ease, color 0.25s ease, box-shadow 0.25s ease;
 }
-/* Navbar */
+
+/* Navbar */ 
 .navbar {
     background-color: var(--bg-cream);
     border-bottom:1px solid var(--border-light);
@@ -164,7 +165,7 @@ a {
 .hero {
     position: relative;
     width: 100%;
-    min-height: 600px;
+    min-height: 1000px;
     display: flex;
     align-items: center;
     overflow: hidden;
