@@ -18,6 +18,28 @@ body {
 
 }
 
+#panier{
+    border-radius: 5%;
+    margin:5%;
+    padding:3%;
+    width:50%; 
+    background-color: white;
+}
+
+#recap{
+    background-color: #243C32;
+}
+
+.delete{
+    color:#A4543B;
+}
+
+.articles{
+    display:flex;
+     flex-direction: row;
+      width:600px;
+}
+
 h1 {
     font-family: "Cormorant Garamond";
     font-weight:500;

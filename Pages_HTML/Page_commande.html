@@ -1,6 +1,6 @@
 <!--Jost Coline
 Page des commandes et des paniers
-20.11.2026-->
+27.11.2026-->
 
 <!DOCTYPE html>
 <html lang="en">
@@ -17,6 +17,8 @@ Page des commandes et des paniers
 </head>
 <body>
     <header>Le headerrrerererererer</header>
+
+
     <div id="title">
         <div class="comm">
             <span class="line"></span>
@@ -26,35 +28,74 @@ Page des commandes et des paniers
         <h1>Votre commande</h1>
         <h2>A emporter . prête en 25 minutes . paiement au retrait</h2>
     </div>
-    <section style = "width:50%">
-        <div style="flex:auto; flex-direction: row;">
-            <h3>Votre panier (3 articles)</h3>
-            <i class="fa-solid fa-trash-can"></i>
-            <p>Vider le panier</p>
-        </div>
-        <div style="flex: content;">
-            <img src="pizza.png" style="height: 50px;"></img>
-            <h4>Pizza Margherita DOP</h4>
-            <p>CHF 19.00 / pièce</p>
-            <button class="button" onclick="plus()">
-            <p>+</p>
-            </button>
-            <p id="num"></p>
-            <button class="button" onclick="minus()">
-            <p>-</p>
-            </button>
-        </div>
-    </section>
+
+    <div>
+        <section id="panier">
+            <div class="articles">
+                <h3>Votre panier (3 articles)</h3>
+                <i class="fa-solid fa-trash-can delete"></i>
+                <p class="delete">Vider le panier</p>
+            </div>
+
+            <div class="articles">
+                <img src="pizza.png" style="height: 50px;"></img>
+                <h4 style="width: 200px;">Pizza Margherita DOP</h4>
+                <p style="width: 200px;">CHF 19.00 / pièce</p>
+                <button class="button" onclick="plus(numpizza)">
+                <p>+</p>
+                </button>
+                <p>1</p>
+                <button class="button" onclick="minus(numpizza)">
+                <p>-</p>
+                </button>
+
+            </div>
+
+                    <div class="articles">
+                <img src="pasta.png" style="height: 50px;"></img>
+                <h4 style="width: 200px;">Spaghetti alla carbonara</h4>
+                <p style="width: 200px;">CHF 24.00 / pièce</p>
+                <button class="button" onclick="plus(numpasta)">
+                <p>+</p>
+                </button>
+                <p>1</p>
+                <button class="button" onclick="minus(numpasta)">
+                <p>-</p>
+                </button>
+
+            </div>
+
+                    <div class="articles">
+                <img src="tiramisu.png" style="height: 50px;"></img>
+                <h4 style="width: 200px;">Tiramisù dela casa</h4>
+                <p style="width: 200px;">CHF 11.00 / pièce</p>
+                <button class="button">
+                <p>+</p>
+                </button>
+                <p>2</p>
+                <button class="button">
+                <p>-</p>
+                </button>
+            </div>
+
+        </section>
+
+        <section id="recap">
+            <h3>Récapitulatif</h3>
+        </section>
+    </div>
     <footer>Le fouteurueueuueruerue</footer>
 </body>
 </html>
 
 <script>
-    let num = 0;
-    function plus() {
+    let numpizza = 0;
+    let numpasta = 0;
+    let numtiramisu = 0;
+    function plus(num) {
     document.getElementById("num").textContent = ++num;
     }
-    function minus() {
+    function minus(num) {
     document.getElementById("num").textContent = --num;
     }
 </script>
