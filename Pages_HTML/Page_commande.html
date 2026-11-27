@@ -26,8 +26,35 @@ Page des commandes et des paniers
         <h1>Votre commande</h1>
         <h2>A emporter . prête en 25 minutes . paiement au retrait</h2>
     </div>
-    <div>
-        <h3>Votre panier (3 articles)</h3>
-    </div>
+    <section style = "width:50%">
+        <div style="flex:auto; flex-direction: row;">
+            <h3>Votre panier (3 articles)</h3>
+            <i class="fa-solid fa-trash-can"></i>
+            <p>Vider le panier</p>
+        </div>
+        <div style="flex: content;">
+            <img src="pizza.png" style="height: 50px;"></img>
+            <h4>Pizza Margherita DOP</h4>
+            <p>CHF 19.00 / pièce</p>
+            <button class="button" onclick="plus()">
+            <p>+</p>
+            </button>
+            <p id="num"></p>
+            <button class="button" onclick="minus()">
+            <p>-</p>
+            </button>
+        </div>
+    </section>
+    <footer>Le fouteurueueuueruerue</footer>
 </body>
 </html>
+
+<script>
+    let num = 0;
+    function plus() {
+    document.getElementById("num").textContent = ++num;
+    }
+    function minus() {
+    document.getElementById("num").textContent = --num;
+    }
+</script>
